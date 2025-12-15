@@ -1,0 +1,33 @@
+<div class="card">
+    <div class="card-header bg-success text-white">
+        <h4 class="mb-0">Login to Your Account</h4>
+    </div>
+    <div class="card-body">
+        <form method="POST" action="/login">
+            <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" 
+                       class="form-control" 
+                       id="email" 
+                       name="email" 
+                       required
+                       placeholder="Enter your email">
+            </div>
+            
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" 
+                       class="form-control" 
+                       id="password" 
+                       name="password" 
+                       required
+                       placeholder="Enter your password">
+            </div>
+            
+            <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-success btn-lg">Login</button>
+                <a href="/register" class="btn btn-outline-primary">Don't have an account? Register</a>
+            </div>
+        </form>
+    </div>
+</div>
